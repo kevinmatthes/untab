@@ -48,6 +48,10 @@
 
 * create `untab.l`
 
+### Fixed
+
+* ignore `lex.*.c`
+
 ## [0.1] -- 2022-04-01
 
 ### Added
