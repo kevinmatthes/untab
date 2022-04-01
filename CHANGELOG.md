@@ -44,6 +44,11 @@
 
 ## [Unreleased]
 
+### Fixed
+
+* changelog as Appendix B in repository manual
+* missing changelog item
+
 ## [0.3] -- 2022-04-01
 
 ### Added
