@@ -52,11 +52,18 @@ compiler.flags  = ' -Wall -Werror -Wextra -Wno-unused-function -Wpedantic ';
 compiler.link   = ' -lfl ';
 compiler.call   = [compiler.self compiler.flags];
 
+octave.self = ' octave ';
+
 scangen.self    = ' flex ';
 
 
 
 % Files.
 files.self  = 'flex-gcc.m'
+
+
+
+% Control flow.
+banner  = ['[ ' files.self ' ] '];
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
