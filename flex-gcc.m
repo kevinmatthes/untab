@@ -83,6 +83,37 @@ disp ([banner 'Begin build instruction.']);
 
 
 
+% Call Flex.
+disp ([banner 'Compile scanner definition with Flex ...']);
+
+disp (scangen.call);
+system (scangen.call);
+
+disp ([banner 'Done.']);
+
+
+
+% Call GCC.
+disp ([banner 'Compile C source code with GCC ...']);
+
+disp (compiler.call);
+system (compiler.call);
+
+disp ([banner 'Done.']);
+
+
+
+% Clean build artifacts.
+fprintf ([banner 'Remove build artifacts ... ']);
+
+if length (glob (scangen.out));
+    delete (scangen.out);
+end;
+
+disp ('Done.');
+
+
+
 % End build instruction.
 disp ([banner 'End build instruction.']);
 
