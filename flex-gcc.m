@@ -70,4 +70,20 @@ files.self  = 'flex-gcc.m';
 % Miscellaneous.
 banner  = ['[ ' files.self ' ] '];
 
+
+
+%%%%
+%%
+%% Build steps.
+%%
+%%%%
+
+% Begin build instruction.
+disp ([banner 'Begin build instruction.']);
+
+
+
+% End build instruction.
+disp ([banner 'End build instruction.']);
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
