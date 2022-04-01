@@ -60,6 +60,7 @@
 ### Fixed
 
 * ignore `lex.*.c`
+* ignore `untab` (compilation target)
 
 ## [0.1] -- 2022-04-01
 
