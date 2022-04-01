@@ -84,6 +84,7 @@ files.source        = [files.source directories.yaml manual.style '.yaml '];
 files.source        = [files.source files.newpage];
 files.source        = [files.source ' ./README.md '];
 files.source        = [files.source files.newpage];
+files.source        = [files.source ' ./CHANGELOG.md '];
 files.source        = [files.source files.license];
 files.source        = [files.source files.newpage];
 
