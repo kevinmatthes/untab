@@ -47,6 +47,7 @@
 ### Added
 
 * add GPL 2.0 license
+* build instruction:  repository manual
 * create `.gitconfig`
 * create list of authors
 * create project meta data for repository manual
