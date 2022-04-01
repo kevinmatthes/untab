@@ -19,10 +19,10 @@
 %%%%
 %%
 %%  FILE
-%%      .m
+%%      flex-gcc.m
 %%
 %%  BRIEF
-%%      .
+%%      Create a new lexer using Flex and GCC.
 %%
 %%  AUTHOR
 %%      Kevin Matthes
@@ -39,5 +39,19 @@
 %%      See `README.md' for project details.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%
+%%
+%% Variables.
+%%
+%%%%
+
+% Software.
+compiler.self   = ' gcc ';
+compiler.flags  = ' -Wall -Werror -Wextra -Wno-unused-function -Wpedantic ';
+compiler.link   = ' -lfl ';
+compiler.call   = [compiler.self compiler.flags];
+
+scangen.self    = ' flex ';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
