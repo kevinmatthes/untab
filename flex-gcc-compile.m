@@ -54,4 +54,9 @@ compiler.call   = [compiler.self compiler.flags];
 
 scangen.self    = ' flex ';
 
+
+
+% Files.
+files.self  = 'flex-gcc.m'
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
