@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [0.3] -- 2022-04-01
+
 ### Added
 
 * build instruction:  entire compilation routine
