@@ -44,6 +44,11 @@
 
 ## [Unreleased]
 
+### Added
+
+* build instruction:  entire compilation routine
+* create `flex-gcc.m`
+
 ## [0.2] -- 2022-04-01
 
 ### Added
