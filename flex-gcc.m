@@ -47,23 +47,27 @@
 %%%%
 
 % Software.
-compiler.self   = ' gcc ';
 compiler.flags  = ' -Wall -Werror -Wextra -Wno-unused-function -Wpedantic ';
+compiler.in     = '*.c';
 compiler.link   = ' -lfl ';
-compiler.call   = [compiler.self compiler.flags];
+compiler.out    = 'untab';
+compiler.self   = ' gcc ';
+compiler.call   = [compiler.self ' ' compiler.flags ' ' compiler.in];
+compiler.call   = [compiler.call ' ' compiler.link ' -o ' compiler.out];
 
-octave.self = ' octave ';
-
+scangen.in      = 'untab.l';
+scangen.out     = 'lex.yy.c';
 scangen.self    = ' flex ';
+scangen.call    = [scangen.self ' ' scangen.in];
 
 
 
 % Files.
-files.self  = 'flex-gcc.m'
+files.self  = 'flex-gcc.m';
 
 
 
-% Control flow.
+% Miscellaneous.
 banner  = ['[ ' files.self ' ] '];
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
