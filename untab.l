@@ -33,7 +33,7 @@
 
 "\t"    {
             for (int i = 0x0; i < YYVAL; i++)
-                fprintf (YYOUT, " ");
+                fprintf (yyout, " ");
         };
 
 .       {
