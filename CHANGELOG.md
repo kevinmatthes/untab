@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [0.2] -- 2022-04-01
+
 ### Added
 
 * create `untab.l`
