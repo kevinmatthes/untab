@@ -29,10 +29,14 @@
 
 /******************************************************************************/
 
+%{
+    unsigned int    tablength   = 0x0;
+%}
+
 %% /***************************************************************************/
 
 "\t"    {
-            for (int i = 0x0; i < YYVAL; i++)
+            for (int i = 0x0; i < tablength; i++)
                 fprintf (yyout, " ");
         };
 
@@ -47,11 +51,11 @@ int main (const int argc, const char * const * const args)
     switch (argc)
     {
         default:
-            YYVAL   = 0x4;
+            tablength   = 0x4;
             break;
 
         case 0x2:
-            YYVAL   = atoi (args[0x2]);
+            tablength   = atoi (args[0x1]);
             break;
     };
 
