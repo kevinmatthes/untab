@@ -19,10 +19,10 @@
 %%%%
 %%
 %%  FILE
-%%      .m
+%%      install-app.m
 %%
 %%  BRIEF
-%%      .
+%%      Install a compilation of the provided application.
 %%
 %%  AUTHOR
 %%      Kevin Matthes
@@ -39,5 +39,82 @@
 %%      See `README.md' for project details.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%
+%%
+%% Variables.
+%%
+%%%%
+
+% Software.
+octave.in   = 'flex-gcc.m';
+octave.out  = './untab';
+octave.self = ' octave ';
+octave.call = [octave.self ' ' octave.in];
+
+
+
+% Directories.
+directories.dep1    = '~/.local/';
+directories.target  = '~/.local/bin/';
+
+
+
+% Files.
+files.self  = 'install-app.m';
+
+
+
+% Miscellaneous.
+banner  = ['[ ' files.self ' ] '];
+
+
+
+%%%%
+%%
+%% Build steps.
+%%
+%%%%
+
+% Begin build instruction.
+disp ([banner 'Begin build instruction.']);
+
+
+
+% Compile application.
+disp ([banner 'Compile the application to install ...']);
+system (octave.call);
+disp ([banner 'Done.']);
+
+
+
+% Create directories, if required.
+fprintf ([banner 'Check for ' directories.dep1 ' ... ']);
+if length (glob (directories.dep1));
+    disp ([banner 'Done.']);
+else;
+    mkdir (directories.dep1);
+    disp ([banner 'Created.']);
+end;
+
+fprintf ([banner 'Check for ' directories.target ' ... ']);
+if length (glob (directories.target));
+    disp ([banner 'Done.']);
+else;
+    mkdir (directories.target);
+    disp ([banner 'Created.']);
+end;
+
+
+
+% Install.
+fprintf ([banner 'Install application in ' directories.target ' ... ']);
+movefile (octave.out, directories.target, 'f');
+disp ('Done.');
+
+
+
+% End build instruction.
+disp ([banner 'End build instruction.']);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
