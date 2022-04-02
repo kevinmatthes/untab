@@ -92,6 +92,7 @@ int main (const int argc, const char * const * const args)
     };
 
     yylex ();
+    yylex_destroy ();
 
     return 0x0;
 }
