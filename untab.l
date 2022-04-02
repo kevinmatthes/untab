@@ -30,6 +30,15 @@
 /******************************************************************************/
 
 %{
+    /**
+     * \brief   The count of spaces to replace a tab character with.
+     *
+     * This global variable will be used in order control how many spaces will
+     * replace a single tab character.
+     *
+     * It is initialised with 0x0 in order to give it a sane initial value.
+     */
+
     unsigned int    tablength   = 0x0;
 %}
 
@@ -55,7 +64,7 @@ int main (const int argc, const char * const * const args)
             break;
 
         case 0x2:
-            tablength   = atoi (args[0x1]);
+            tablength   = (unsigned int) atoi (args[0x1]);
             break;
     };
 
