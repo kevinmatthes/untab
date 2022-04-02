@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Added
+
+* docstrings for Doxygen
+
 ### Changed
 
 * data type of `tablength` from `int` to `unsigned int`
