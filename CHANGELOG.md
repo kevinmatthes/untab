@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Added
+
+* build instruction:  installation
+
 ### Fixed
 
 * fix memory leaks of lexer

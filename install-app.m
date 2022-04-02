@@ -108,7 +108,7 @@ end;
 
 
 % Install.
-fprintf ([banner 'Install application in ' directories.target ' ... ']);
+fprintf ([banner 'Install ' octave.out ' in ' directories.target ' ... ']);
 movefile (octave.out, directories.target, 'f');
 disp ('Done.');
 
