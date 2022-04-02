@@ -66,7 +66,7 @@
  * with, the command line arguments will be used to determine the intended
  * value.
  *
- * If no argument is passed to this lexer, 0x4 will be assumed by default.
+ * If no argument is passed to this lexer, 0x4 will be assumed, by default.
  *
  * In case just one argument is passed, it will be converted to an integer
  * number which is assumed to be the intended count of spaces.
