@@ -105,7 +105,7 @@
 
 * add GPL 2.0 license
 * build instruction:  repository manual
-* create `.gitconfig`
+* create `.gitignore`
 * create list of authors
 * create project meta data for repository manual
 * create repository README
