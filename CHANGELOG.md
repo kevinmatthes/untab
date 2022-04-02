@@ -47,6 +47,7 @@
 ### Added
 
 * docstrings for Doxygen
+* software requirement: Flex
 
 ### Changed
 
