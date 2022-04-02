@@ -44,6 +44,11 @@
 
 ## [Unreleased]
 
+### Fixed
+
+* obsolete banners in build routine
+* typo in changelog item
+
 ## [1.0] -- 2022-04-02
 
 ### Added
