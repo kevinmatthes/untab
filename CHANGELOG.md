@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+* data type of `tablength` from `int` to `unsigned int`
+
 ### Fixed
 
 * changelog as Appendix B in repository manual
