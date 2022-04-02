@@ -106,4 +106,13 @@ octave flex-gcc.m
 octave-cli flex-gcc.m
 ```
 
+When optimising a source file with this lexer, the file needs to be passed from
+`stdin` to the application.  The result will be written to `stdout`.
+
+By default, a single tab character will evaluate to four (4) space characters.
+This count can be adjusted by passing the desired tab width as a command line
+argument to the lexer.  In case the count cannot be parsed to a **decimal**
+number, zero will be assumed.  This will completely remove all tab characters
+from the input file.
+
 <!----------------------------------------------------------------------------->
