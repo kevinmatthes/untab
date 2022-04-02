@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+* fix memory leaks of lexer
+
 ## [0.4] -- 2022-04-02
 
 ### Added
