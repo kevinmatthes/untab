@@ -46,6 +46,7 @@
 
 ### Fixed
 
+* missing changelog item
 * obsolete banners in build routine
 * typo in changelog item
 * typos in docstrings
@@ -55,6 +56,7 @@
 ### Added
 
 * build instruction:  installation
+* create `install-app.m`
 
 ### Fixed
 
