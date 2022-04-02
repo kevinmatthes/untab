@@ -85,18 +85,18 @@ disp ([banner 'Done.']);
 % Create directories, if required.
 fprintf ([banner 'Check for ' directories.dep1 ' ... ']);
 if length (glob (directories.dep1));
-    disp ([banner 'Done.']);
+    disp ('Done.');
 else;
     mkdir (directories.dep1);
-    disp ([banner 'Created.']);
+    disp ('Created.');
 end;
 
 fprintf ([banner 'Check for ' directories.target ' ... ']);
 if length (glob (directories.target));
-    disp ([banner 'Done.']);
+    disp ('Done.');
 else;
     mkdir (directories.target);
-    disp ([banner 'Created.']);
+    disp ('Created.');
 end;
 
 
