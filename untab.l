@@ -55,6 +55,29 @@
 
 %% /***************************************************************************/
 
+/**
+ * \brief   The main function of this lexer.
+ * \param   argc    The count of passed command line arguments.
+ * \param   args    The passed command line arguments.
+ * \return  0x0
+ *
+ * This lexer will replace any tab characters in the input stream with space
+ * characters.  In order to define the count of spaces to replace a single tab
+ * with, the command line arguments will be used to determine the intended
+ * value.
+ *
+ * If no argument is passed to this lexer, 0x4 will be assumed by default.
+ *
+ * In case just one argument is passed, it will be converted to an integer
+ * number which is assumed to be the intended count of spaces.
+ *
+ * Should more two or more arguments be passed to this lexer, 0x4 is assumed
+ * since it could no be deduced which argument is intended to be the one for the
+ * space count setting.
+ *
+ * This lexer always returns with 0x0.
+ */
+
 int main (const int argc, const char * const * const args)
 {
     switch (argc)
