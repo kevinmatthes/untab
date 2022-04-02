@@ -68,12 +68,12 @@
  *
  * If no argument is passed to this lexer, 0x4 will be assumed, by default.
  *
- * In case just one argument is passed, it will be converted to an integer
+ * In case just one argument is passed, it will be converted into an integer
  * number which is assumed to be the intended count of spaces.
  *
- * Should more two or more arguments be passed to this lexer, 0x4 is assumed
- * since it could no be deduced which argument is intended to be the one for the
- * space count setting.
+ * Should two or more arguments be passed to this lexer, 0x4 is assumed since it
+ * could not be deduced which argument is intended to be the one for the tab
+ * width.
  *
  * This lexer always returns with 0x0.
  */
