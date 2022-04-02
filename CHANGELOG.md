@@ -48,6 +48,7 @@
 
 * obsolete banners in build routine
 * typo in changelog item
+* typos in docstrings
 
 ## [1.0] -- 2022-04-02
 
