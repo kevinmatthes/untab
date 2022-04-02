@@ -52,18 +52,12 @@ octave.out  = './untab';
 octave.self = ' octave ';
 octave.call = [octave.self ' ' octave.in];
 
-
-
 % Directories.
 directories.dep1    = '~/.local/';
 directories.target  = '~/.local/bin/';
 
-
-
 % Files.
 files.self  = 'install-app.m';
-
-
 
 % Miscellaneous.
 banner  = ['[ ' files.self ' ] '];
