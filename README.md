@@ -95,4 +95,15 @@ the manual for this repository and attach the entire license to it.  The
 resulting file, `repository.pdf`, will be saved in the main directory of this
 repository.
 
+## Description
+
+This repository provides a simple lexer in order to replace tab characters from
+input source files with space characters.  It can be compiled by invoking the
+GNU Octave script `flex-gcc.m` in a terminal:
+
+```
+octave flex-gcc.m
+octave-cli flex-gcc.m
+```
+
 <!----------------------------------------------------------------------------->
