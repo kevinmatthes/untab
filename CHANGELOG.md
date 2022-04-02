@@ -47,6 +47,7 @@
 ### Added
 
 * docstrings for Doxygen
+* minimal project description in README
 * software requirement: Flex
 
 ### Changed
