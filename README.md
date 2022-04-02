@@ -115,4 +115,12 @@ argument to the lexer.  In case the count cannot be parsed to a **decimal**
 number, zero will be assumed.  This will completely remove all tab characters
 from the input file.
 
+The script `install-app.m` will install the application in `~/.local/bin/`, at
+option.
+
+```
+octave install-app.m
+octave-cli install-app.m
+```
+
 <!----------------------------------------------------------------------------->
