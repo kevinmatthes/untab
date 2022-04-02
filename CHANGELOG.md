@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [1.0] -- 2022-04-02
+
 ### Added
 
 * build instruction:  installation
