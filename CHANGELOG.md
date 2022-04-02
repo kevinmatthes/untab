@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [1.1] -- 2022-04-02
+
 ### Fixed
 
 * missing changelog item
