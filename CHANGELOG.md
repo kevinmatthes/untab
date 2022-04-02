@@ -58,12 +58,22 @@
 * changelog as Appendix B in repository manual
 * missing changelog item
 
+### Removed
+
+* software requirement: Doxygen
+* software requirement: `make`
+
 ## [0.3] -- 2022-04-01
 
 ### Added
 
 * build instruction:  entire compilation routine
 * create `flex-gcc.m`
+
+### Deprecated
+
+* software requirement: Doxygen
+* software requirement: `make`
 
 ## [0.2] -- 2022-04-01
 

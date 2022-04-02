@@ -76,11 +76,9 @@ invoked by calling `repository-manual.m`.
 | Requirement       | Type          | Role                                  |
 |:------------------|:-------------:|:--------------------------------------|
 | `docs-snippets`   | repository    | documentation constants               |
-| Doxygen           | application   | creation of source code documentation |
 | Flex              | application   | Lex compiler                          |
 | GCC               | application   | C compiler                            |
 | GNU Octave        | application   | execution of the provided scripts     |
-| `make`            | application   | finalisation of Doxygen documentation |
 | Pandoc            | application   | compilation of repository manual      |
 | `texlive-full`    | package       | compilation of repository manual      |
 
