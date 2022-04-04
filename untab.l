@@ -41,6 +41,12 @@
 
     unsigned int    tablength   = 0x0;
 
+
+
+    /*
+     * Function declarations.
+     */
+
     extern int main (const int argc, const char * const * const args);
 %}
 
