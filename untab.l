@@ -31,6 +31,15 @@
 
 %{
     /*
+     * Includes.
+     */
+
+    #include <ctype.h>
+    #include <sysexits.h>
+
+
+
+    /*
      * Function declarations.
      */
 
@@ -40,7 +49,7 @@
     extern void spaces  (void);
 
 
-    
+
     /**
      * \brief   The count of spaces to replace a tab character with.
      *
@@ -102,7 +111,7 @@ void eval (const int argc, const char * const * const args)
  * \brief   The main function of this lexer.
  * \param   argc    The count of passed command line arguments.
  * \param   args    The passed command line arguments.
- * \return  0x0
+ * \return  The application status.
  *
  * This lexer will replace any tab characters in the input stream with space
  * characters.  In order to define the count of spaces to replace a single tab
@@ -125,7 +134,7 @@ int main (const int argc, const char * const * const args)
 {
     eval (argc, args);
     process ();
-    return 0x0;
+    return EX_OK;
 }
 
 
