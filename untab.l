@@ -56,7 +56,7 @@
      * This global variable will be used in order control how many spaces will
      * replace a single tab character.
      *
-     * It is initialised with 0x0 in order to give it a sane initial value.
+     * It is initialised with 0x4 in order to give it a sane initial value.
      */
 
     int tab_width   = 0x4;
