@@ -49,12 +49,14 @@
 * forward declaration of `main` in main lexfile
 * function `eval`
 * function `process`
+* function `spaces`
 
 ### Changed
 
 * data type of `tablength` from `unsigned int` to `int`
 * outsource argument evaluation to function `eval`
 * outsource lexer call and destruction to function `process`
+* outsource space character insertion to function `spaces`
 
 ## [1.1] -- 2022-04-02
 
