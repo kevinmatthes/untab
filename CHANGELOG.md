@@ -46,8 +46,8 @@
 
 ### Added
 
-* function `process`
 * forward declaration of `main` in main lexfile
+* function `process`
 
 ### Changed
 
