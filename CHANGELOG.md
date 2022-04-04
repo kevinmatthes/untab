@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [1.2] -- 2022-04-04
+
 ### Added
 
 * basic option parsing
