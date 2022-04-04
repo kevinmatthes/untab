@@ -280,12 +280,12 @@ void finish (void)
  *
  * The meaning of the return values are as follows:
  *
- * | Code   | Meaning                       		|
+ * | Code   | Meaning                               |
  * |:------:|:--------------------------------------|
- * | 0      | no problem occured            		|
- * | 64     | unknown option / too many arguments	|
- * | 69     | required file not accessable  		|
- * | 74     | too few memory                		|
+ * | 0      | no problem occured                    |
+ * | 64     | unknown option / too many arguments   |
+ * | 69     | required file not accessable          |
+ * | 74     | too few memory                        |
  */
 
 int main (const int argc, char * const * const args)

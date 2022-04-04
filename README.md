@@ -114,9 +114,8 @@ value.
 The intended tab width can be any integer from zero to nine, including zero
 and nine.  The desired width needs be to entered as a decimal integer with
 `-` as a prefix.  For instance, in order to remove all tab characters, `-0`,
-for tab width zero, needs to be passed.
-
-If no argument is passed to this lexer, 4 will be assumed, by default.
+for tab width zero, needs to be passed.  If no argument is passed to this
+lexer, 4 will be assumed, by default.
 
 This lexer offers both an interactive mode as well as a batch one.
 
@@ -143,12 +142,12 @@ Possible errors are:
 
 The meaning of the return values are as follows:
 
-| Code   | Meaning                       |
-|:------:|:------------------------------|
-| 0      | No problem occured.           |
-| 64     | Unknown option.               |
-| 69     | Required file not accessable. |
-| 74     | Too few memory.               |
+| Code   | Meaning                               |
+|:------:|:--------------------------------------|
+| 0      | no problem occured                    |
+| 64     | unknown option / too many arguments   |
+| 69     | required file not accessable          |
+| 74     | too few memory                        |
 
 The script `install-app.m` will install the application in `~/.local/bin/`, at
 option.
