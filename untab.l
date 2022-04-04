@@ -39,7 +39,7 @@
      * It is initialised with 0x0 in order to give it a sane initial value.
      */
 
-    unsigned int    tablength   = 0x0;
+    unsigned int    tablength   = 0x4;
 
 
 
@@ -47,6 +47,7 @@
      * Function declarations.
      */
 
+    extern void eval    (const int argc, const char * const * const args);
     extern int  main    (const int argc, const char * const * const args);
     extern void process (void);
 %}
