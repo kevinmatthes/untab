@@ -43,10 +43,13 @@
      * Function declarations.
      */
 
+    // Processing functions.
     extern void eval    (const int argc, const char * const * const args);
     extern int  main    (const int argc, const char * const * const args);
     extern void process (void);
     extern void spaces  (void);
+
+    // Error handling functions.
     extern void unknown_option  (const char * const option);
 
 
