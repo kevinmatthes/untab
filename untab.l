@@ -225,6 +225,40 @@ int main (const int argc, char * const * const args)
 
 
 /**
+ * \brief   Set up the streams for lexing.
+ *
+ * This function will open the files for in- and output.
+ *
+ * In case there is no input file set, `yyin` will remain unchanged.
+ */
+
+void prepare (void)
+{
+    if (input_name != NULL)
+    {
+        input_file = fopen (input_name, "rb");
+
+        if (input_file == NULL)
+            unknown_file (input_name);
+
+        auxillary = fopen (AUXILLARY, "wb");
+
+        if (auxillary == NULL)
+        {
+            fclose (input_file);
+            unknown_file (AUXILLARY);
+        };
+
+        yyin    = input_file;
+        yyout   = auxillary;
+    };
+
+    return;
+}
+
+
+
+/**
  * \brief   Lex the given stream.
  *
  * This function fill run the defined lexer over the input stream, write the
