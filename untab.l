@@ -91,16 +91,32 @@
 
 void eval (const int argc, const char * const * const args)
 {
-    switch (argc)
-    {
-        default:
-            tab_width   = 0x4;
-            break;
+    for (int i = 0x1; i < argc; i++)
+        if (args[i][0x0] == '-')
+        {
+            switch (strlen (args[i]))
+            {
+                default:
+                    fprintf (stderr, "Unknown option:  '%s'.\n", args[i]);
+                    exit (EX_USAGE);
+                    break;
 
-        case 0x2:
-            tab_width   = atoi (args[0x1]);
-            break;
-    };
+                case 0x2:
+                    if (isdigit (args[i][0x1]))
+                        tab_width = args[i][0x1] - '0';
+                    else
+                    {
+                        fprintf (stderr, "Unknown option:  '%s'.\n", args[i]);
+                        exit (EX_USAGE);
+                    }
+                    break;
+            };
+        }
+        else
+        {
+            fprintf (stderr, "Unresolvable argument:  '%s'.\n", args[i]);
+            exit (EX_USAGE);
+        };
 
     return;
 }
@@ -127,7 +143,12 @@ void eval (const int argc, const char * const * const args)
  * could not be deduced which argument is intended to be the one for the tab
  * width.
  *
- * This lexer always returns with 0x0.
+ * The meaning of the return values is as follows:
+ *
+ * | Code   | Meaning               |
+ * |:------:|:----------------------|
+ * | 0      | No problem occured.   |
+ * | 64     | Unknown option.       |
  */
 
 int main (const int argc, const char * const * const args)

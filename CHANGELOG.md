@@ -50,6 +50,8 @@
 * function `eval`
 * function `process`
 * function `spaces`
+* include `ctypes.h`
+* include `sysexits.h`
 
 ### Changed
 
