@@ -225,6 +225,22 @@ int main (const int argc, char * const * const args)
 
 
 /**
+ * \brief   Quit the application because of too few memory.
+ *
+ * This function will write a brief error message to `stderr` and quit the
+ * application with code 74.
+ */
+
+inline void memory_insufficient (void)
+{
+    fprintf (stderr, "Not enough memory available!\n");
+    exit (EX_IOERR);
+    return;
+}
+
+
+
+/**
  * \brief   Set up the streams for lexing.
  *
  * This function will open the files for in- and output.
