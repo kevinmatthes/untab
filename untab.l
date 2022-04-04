@@ -88,7 +88,27 @@
      * processed.
      */
 
-    char * input = NULL;
+    char * input_name = NULL;
+
+
+
+    /**
+     * \brief   An auxillary file.
+     *
+     * This file will store the output of the lexer, if required.
+     */
+
+    FILE * auxillary = NULL;
+
+
+
+    /**
+     * \brief   The input file.
+     *
+     * The input file to optimise.
+     */
+
+    FILE * input_file = NULL;
 
 
 
