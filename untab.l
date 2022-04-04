@@ -50,7 +50,8 @@
     extern void spaces  (void);
 
     // Error handling functions.
-    extern void unknown_option  (const char * const option);
+    extern void unknown_option          (const char * const option);
+    extern void unresolvable_argument   (const char * const argument);
 
 
 
@@ -204,6 +205,23 @@ void spaces (void)
 inline void unknown_option (const char * const option)
 {
     fprintf (stderr, "Unknown option:  '%s'.\n", option);
+    exit (EX_USAGE);
+    return;
+}
+
+
+
+/**
+ * \brief   Quit the application because of an unresolvable argument.
+ * \param   argument    The argument which cannot be resolved.
+ *
+ * In case some extra arguments are passed to the lexer, it cannot deduce what
+ * it should do with them.  Hence, it will consider them unresolvable and quit.
+ */
+
+inline void unresolvable_argument (const char * const argument)
+{
+    fprintf (stderr, "Unresolvable argument:  '%s'.\n", argument);
     exit (EX_USAGE);
     return;
 }
