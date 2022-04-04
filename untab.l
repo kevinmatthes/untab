@@ -365,6 +365,9 @@ void spaces (void)
 /**
  * \brief   Quit the application because of an unknown file.
  *
+ * Sometimes, the requested are not available for some reasons.  In these
+ * situations, it is not useful to continue the execution of the lexer.
+ *
  * This function will write a brief error message to `stderr` and quit the
  * application with code 69.
  */
