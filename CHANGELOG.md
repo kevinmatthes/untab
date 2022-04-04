@@ -59,6 +59,7 @@
 * function `unresolvable_argument`
 * include `ctypes.h`
 * include `sysexits.h`
+* optimisation of given files -- given as command line arguments
 
 ### Changed
 
