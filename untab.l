@@ -382,6 +382,9 @@ inline void unknown_file (const char * const file)
  * \brief   Quit the application because of an unknown option.
  * \param   option  The option which cannot be resolved.
  *
+ * In case some options cannot be resolved, the lexer cannot deduce which action
+ * was intended.  Hence, it will consider them unresolvable and quit.
+ *
  * This function will write a brief error message to `stderr` and quit the
  * application with code 64.
  */
