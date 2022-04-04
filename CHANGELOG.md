@@ -46,7 +46,13 @@
 
 ### Added
 
+* function `process`
 * forward declaration of `main` in main lexfile
+
+### Changed
+
+* data type of `tablength` from `unsigned int` to `int`
+* outsource lexer call and destruction to function `process`
 
 ## [1.1] -- 2022-04-02
 
