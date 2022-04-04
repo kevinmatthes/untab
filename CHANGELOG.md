@@ -49,8 +49,12 @@
 * basic option parsing
 * forward declaration of `main` in main lexfile
 * function `eval`
+* function `finish`
+* function `insufficient_memory`
+* function `prepare`
 * function `process`
 * function `spaces`
+* function `unknown_file`
 * function `unknown_option`
 * function `unresolvable_argument`
 * include `ctypes.h`
