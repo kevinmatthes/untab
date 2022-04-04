@@ -85,6 +85,22 @@
  * file will be removed.
  */
 
+void eval (const int argc, const char * const * const args)
+{
+    switch (argc)
+    {
+        default:
+            tablength   = 0x4;
+            break;
+
+        case 0x2:
+            tablength   = (unsigned int) atoi (args[0x1]);
+            break;
+    };
+    
+    return;
+}
+
 
 
 /**
@@ -112,19 +128,8 @@
 
 int main (const int argc, const char * const * const args)
 {
-    switch (argc)
-    {
-        default:
-            tablength   = 0x4;
-            break;
-
-        case 0x2:
-            tablength   = (unsigned int) atoi (args[0x1]);
-            break;
-    };
-
+    eval (argc, args);
     process ();
-
     return 0x0;
 }
 
