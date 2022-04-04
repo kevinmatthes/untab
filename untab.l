@@ -300,7 +300,8 @@ inline void memory_insufficient (void)
  *
  * This function will open the files for in- and output.
  *
- * In case there is no input file set, `yyin` will remain unchanged.
+ * In case there is no input file set, both `yyin` and `yyout` will remain
+ * unchanged.
  */
 
 void prepare (void)
