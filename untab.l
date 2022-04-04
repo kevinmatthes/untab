@@ -249,14 +249,12 @@ void finish (void)
  * with, the command line arguments will be used to determine the intended
  * value.
  *
- * If no argument is passed to this lexer, 0x4 will be assumed, by default.
+ * The intended tab width can be any integer from zero to nine, including zero
+ * and nine.  The desired width needs to entered as a decimal integer with `-`
+ * prefix.  For instance, in order to remove all tab characters, `-0` for tab
+ * width zero needs to be passed.
  *
- * In case just one argument is passed, it will be converted into an integer
- * number which is assumed to be the intended count of spaces.
- *
- * Should two or more arguments be passed to this lexer, 0x4 is assumed since it
- * could not be deduced which argument is intended to be the one for the tab
- * width.
+ * If no argument is passed to this lexer, 4 will be assumed, by default.
  *
  * The meaning of the return values is as follows:
  *
