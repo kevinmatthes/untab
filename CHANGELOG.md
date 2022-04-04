@@ -71,7 +71,15 @@
 
 * too much `const`
 
+### Removed
+
+* passing integers to the application for setting the tab width
+
 ## [1.1] -- 2022-04-02
+
+### Deprecated
+
+* passing integers to the application for setting the tab width
 
 ### Fixed
 
