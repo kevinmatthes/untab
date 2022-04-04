@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Added
+
+* forward declaration of `main` in main lexfile
+
 ## [1.1] -- 2022-04-02
 
 ### Fixed
