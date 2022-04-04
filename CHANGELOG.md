@@ -51,6 +51,7 @@
 * function `eval`
 * function `process`
 * function `spaces`
+* function `unknown_option`
 * include `ctypes.h`
 * include `sysexits.h`
 
