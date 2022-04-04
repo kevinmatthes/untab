@@ -39,7 +39,7 @@
      * It is initialised with 0x0 in order to give it a sane initial value.
      */
 
-    unsigned int    tablength   = 0x4;
+    int tablength   = 0x4;
 
 
 
@@ -55,7 +55,7 @@
 %% /***************************************************************************/
 
 "\t"    {
-            for (unsigned int i = 0x0; i < tablength; i++)
+            for (int i = 0x0; i < tablength; i++)
                 fprintf (yyout, " ");
         };
 
