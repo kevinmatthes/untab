@@ -47,6 +47,7 @@
     extern int  main    (const int argc, const char * const * const args);
     extern void process (void);
     extern void spaces  (void);
+    extern void unknown_option  (const char * const option);
 
 
 
@@ -188,6 +189,23 @@ void spaces (void)
     for (int i = 0x0; i < tab_width; i++)
         fprintf (yyout, " ");
 
+    return;
+}
+
+
+
+/**
+ * \brief   Quit the application because of an unknown option.
+ * \param   option  The option which cannot be resolved.
+ *
+ * This function will write a brief error message to `stderr` and quit the
+ * application with code 64.
+ */
+
+inline void unknown_option (const char * const option)
+{
+    fprintf (stderr, "Unknown option:  '%s'.\n", option);
+    exit (EX_USAGE);
     return;
 }
 
