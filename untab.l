@@ -39,7 +39,7 @@
      * It is initialised with 0x0 in order to give it a sane initial value.
      */
 
-    int tablength   = 0x4;
+    int tab_width   = 0x4;
 
 
 
@@ -50,18 +50,13 @@
     extern void eval    (const int argc, const char * const * const args);
     extern int  main    (const int argc, const char * const * const args);
     extern void process (void);
+    extern void spaces  (void);
 %}
 
 %% /***************************************************************************/
 
-"\t"    {
-            for (int i = 0x0; i < tablength; i++)
-                fprintf (yyout, " ");
-        };
-
-.       {
-            ECHO;
-        };
+"\t"    spaces ();
+.       ECHO;
 
 %% /***************************************************************************/
 
@@ -90,14 +85,14 @@ void eval (const int argc, const char * const * const args)
     switch (argc)
     {
         default:
-            tablength   = 0x4;
+            tab_width   = 0x4;
             break;
 
         case 0x2:
-            tablength   = (unsigned int) atoi (args[0x1]);
+            tab_width   = atoi (args[0x1]);
             break;
     };
-    
+
     return;
 }
 
@@ -146,6 +141,23 @@ inline void process (void)
 {
     yylex ();
     yylex_destroy ();
+    return;
+}
+
+
+
+/**
+ * \brief   Write the spaces to `yyout`.
+ *
+ * This function will write the configurated count of spaces to the default
+ * output stream.
+ */
+
+void spaces (void)
+{
+    for (int i = 0x0; i < tab_width; i++)
+        fprintf (yyout, " ");
+
     return;
 }
 
