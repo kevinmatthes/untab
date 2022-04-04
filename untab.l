@@ -66,6 +66,26 @@
 %% /***************************************************************************/
 
 /**
+ * \brief   Evaluate the command line arguments and set the environment.
+ * \param   argc    The count of passed command line arguments.
+ * \param   args    The passed command line arguments.
+ *
+ * This function will evaluate the passed command line arguments set the
+ * environment of this lexer accordingly.
+ *
+ * The arguments might contain options which are used in order instruct the
+ * resulting application.  For instance, the intended tab width can be passed as
+ * an option.
+ *
+ * If no file is named, the standard streams `yyin` and `yyout` will remain
+ * unchanged such that the lexer will read from `stdin` and will write to
+ * `stdout`.  Else, the given file will become the input stream and result will
+ * be stored in an auxillary file which will be removed at the end.
+ */
+
+
+
+/**
  * \brief   The main function of this lexer.
  * \param   argc    The count of passed command line arguments.
  * \param   args    The passed command line arguments.
