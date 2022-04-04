@@ -348,7 +348,7 @@ inline void process (void)
 /**
  * \brief   Write the spaces to `yyout`.
  *
- * This function will write the configurated count of spaces to the default
+ * This function will write the configurated count of spaces to the configurated
  * output stream.
  */
 
