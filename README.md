@@ -106,14 +106,49 @@ octave flex-gcc.m
 octave-cli flex-gcc.m
 ```
 
-When optimising a source file with this lexer, the file needs to be passed from
-`stdin` to the application.  The result will be written to `stdout`.
+This lexer will replace any tab characters in the input stream with space
+characters.  In order to define the count of spaces to replace a single tab
+with, the command line arguments will be used to determine the intended
+value.
 
-By default, a single tab character will evaluate to four (4) space characters.
-This count can be adjusted by passing the desired tab width as a command line
-argument to the lexer.  In case the count cannot be parsed to a **decimal**
-number, zero will be assumed.  This will completely remove all tab characters
-from the input file.
+The intended tab width can be any integer from zero to nine, including zero
+and nine.  The desired width needs to entered as a decimal integer with `-`
+prefix.  For instance, in order to remove all tab characters, `-0` for tab
+width zero needs to be passed.
+
+If no argument is passed to this lexer, 4 will be assumed, by default.
+
+This lexer offers both an interactive mode as well as a batch one.
+
+The former is invoked automatically if no file name is passed.  Anything
+which does not carry `-` as a prefix is assumed to be a file name.  In the
+interactive mode, the lexer reads from `stdin` and writes to `stdout`.  This
+is useful in order to pipe data around in a terminal session.
+
+The batch mode is invoked automatically by passing a file name to the lexer.
+Anything which does not carry `-` as a prefix is assumed to be a file name.
+The lexer will read from the given file, write the intermediate output to an
+auxillary file named `untab.l.aux` and rewrite the result to the original
+file at the end.  The auxillary file is tidied up automatically.
+
+In case of errors, the lexer will automatically abort the execution and will
+close all open streams and free all allocated memory regions, respectively.
+Corresponding error messages will be written to `stdout` and the return value
+of the lexer will be set according to `sysexits.h`.
+
+Possible errors are:
+* mandatory memory allocations fail
+* required files cannot be accessed
+* unknown command line options
+
+The meaning of the return values are as follows:
+
+| Code   | Meaning                       |
+|:------:|:------------------------------|
+| 0      | No problem occured.           |
+| 64     | Unknown option.               |
+| 69     | Required file not accessable. |
+| 74     | Too few memory.               |
 
 The script `install-app.m` will install the application in `~/.local/bin/`, at
 option.
