@@ -258,6 +258,22 @@ void spaces (void)
 
 
 /**
+ * \brief   Quit the application because of an unknown file.
+ *
+ * This function will write a brief error message to `stderr` and quit the
+ * application with code 69.
+ */
+
+inline void unknown_file (const char * const file)
+{
+    fprintf (stderr, "Unknown file:  '%s'.\n", file);
+    exit (EX_UNAVAILABLE);
+    return;
+}
+
+
+
+/**
  * \brief   Quit the application because of an unknown option.
  * \param   option  The option which cannot be resolved.
  *
