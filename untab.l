@@ -47,7 +47,8 @@
      * Function declarations.
      */
 
-    extern int main (const int argc, const char * const * const args);
+    extern int  main    (const int argc, const char * const * const args);
+    extern void process (void);
 %}
 
 %% /***************************************************************************/
@@ -99,10 +100,25 @@ int main (const int argc, const char * const * const args)
             break;
     };
 
-    yylex ();
-    yylex_destroy ();
+    process ();
 
     return 0x0;
+}
+
+
+
+/**
+ * \brief   Lex the given stream.
+ *
+ * This function fill run the defined lexer over the input stream, write the
+ * result to the configurated output stream and free the lexer at the end.
+ */
+
+inline void process (void)
+{
+    yylex ();
+    yylex_destroy ();
+    return;
 }
 
 /******************************************************************************/
