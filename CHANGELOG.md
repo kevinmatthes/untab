@@ -46,6 +46,7 @@
 
 ### Added
 
+* basic option parsing
 * forward declaration of `main` in main lexfile
 * function `eval`
 * function `process`
