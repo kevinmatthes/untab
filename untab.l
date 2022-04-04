@@ -79,8 +79,10 @@
  *
  * If no file is named, the standard streams `yyin` and `yyout` will remain
  * unchanged such that the lexer will read from `stdin` and will write to
- * `stdout`.  Else, the given file will become the input stream and result will
- * be stored in an auxillary file which will be removed at the end.
+ * `stdout`.  Else, the given file will become the input stream and the result
+ * will be stored in an auxillary file during the processing.  At the end, the
+ * content will be written back to the original input file and the intermediate
+ * file will be removed.
  */
 
 
