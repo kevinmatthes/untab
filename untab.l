@@ -205,10 +205,12 @@ void eval (const int argc, char * const * const args)
  *
  * The meaning of the return values is as follows:
  *
- * | Code   | Meaning               |
- * |:------:|:----------------------|
- * | 0      | No problem occured.   |
- * | 64     | Unknown option.       |
+ * | Code   | Meaning                       |
+ * |:------:|:------------------------------|
+ * | 0      | No problem occured.           |
+ * | 64     | Unknown option.               |
+ * | 69     | Required file not accessable. |
+ * | 74     | Too few memory.               |
  */
 
 int main (const int argc, char * const * const args)
