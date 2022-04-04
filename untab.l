@@ -35,6 +35,7 @@
      */
 
     #include <ctype.h>
+    #include <stdbool.h>
     #include <sysexits.h>
 
 
@@ -56,6 +57,28 @@
 
 
     /**
+     * \brief   A flag to control whether the input file was already set.
+     *
+     * This flag indicates whether the input file was already configurated.  It
+     * will be inverted as soon as the file was set.
+     */
+
+     bool input_unset = true;
+
+
+
+    /**
+     * \brief   The input file to read from.
+     *
+     * This is the file to optimise.  It will be opened when all arguments are
+     * processed.
+     */
+
+    char * input = NULL;
+
+
+
+    /**
      * \brief   The count of spaces to replace a tab character with.
      *
      * This global variable will be used in order control how many spaces will
@@ -64,7 +87,7 @@
      * By default, a tab width of four spaces is assumed.
      */
 
-    int tab_width   = 0x4;
+    int tab_width = 0x4;
 %}
 
 %% /***************************************************************************/
@@ -112,6 +135,11 @@ void eval (const int argc, const char * const * const args)
                         unknown_option (args[i]);
                     break;
             };
+        }
+        else if (input_unset)
+        {
+            input       = args[i];
+            input_unset = false;
         }
         else
             unresolvable_argument (args[i]);
