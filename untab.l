@@ -103,7 +103,7 @@
 
 
     /**
-     * \brief   The input file.
+     * \brief   The input file to read from.
      *
      * The input file to optimise.
      */
