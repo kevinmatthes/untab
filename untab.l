@@ -282,6 +282,10 @@ int main (const int argc, char * const * const args)
 /**
  * \brief   Quit the application because of too few memory.
  *
+ * Sometimes, there is not enough memory left in order to allocate an
+ * intermediate buffer.  In these situations, it is not useful to continue the
+ * execution of the lexer.
+ *
  * This function will write a brief error message to `stderr` and quit the
  * application with code 74.
  */
