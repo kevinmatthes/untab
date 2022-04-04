@@ -45,12 +45,16 @@
      */
 
     // Processing functions.
-    extern void eval    (const int argc, const char * const * const args);
-    extern int  main    (const int argc, const char * const * const args);
+    extern void eval    (const int argc, char * const * const args);
+    extern void finish  (void);
+    extern int  main    (const int argc, char * const * const args);
+    extern void prepare (void);
     extern void process (void);
     extern void spaces  (void);
 
     // Error handling functions.
+    extern void memory_insufficient     (void);
+    extern void unknown_file            (const char * const file);
     extern void unknown_option          (const char * const option);
     extern void unresolvable_argument   (const char * const argument);
 
