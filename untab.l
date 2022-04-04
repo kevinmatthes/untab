@@ -114,10 +114,7 @@ void eval (const int argc, const char * const * const args)
             };
         }
         else
-        {
-            fprintf (stderr, "Unresolvable argument:  '%s'.\n", args[i]);
-            exit (EX_USAGE);
-        };
+            unresolvable_argument (args[i]);
 
     return;
 }
