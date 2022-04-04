@@ -57,6 +57,16 @@
 
 
     /**
+     * \brief   The path to the auxillary file.
+     *
+     * This is the path to the auxillary file which will be removed at the end.
+     */
+
+    #define AUXILLARY   "untab.l.aux"
+
+
+
+    /**
      * \brief   A flag to control whether the input file was already set.
      *
      * This flag indicates whether the input file was already configurated.  It
