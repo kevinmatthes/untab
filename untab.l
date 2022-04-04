@@ -40,6 +40,8 @@
      */
 
     unsigned int    tablength   = 0x0;
+
+    extern int main (const int argc, const char * const * const args);
 %}
 
 %% /***************************************************************************/
