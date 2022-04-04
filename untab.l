@@ -136,7 +136,7 @@
  * \param   argc    The count of passed command line arguments.
  * \param   args    The passed command line arguments.
  *
- * This function will evaluate the passed command line arguments set the
+ * This function will evaluate the passed command line arguments and set the
  * environment of this lexer accordingly.
  *
  * The arguments might contain options which are used in order instruct the
