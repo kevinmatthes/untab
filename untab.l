@@ -184,6 +184,25 @@ void eval (const int argc, char * const * const args)
 
 
 /**
+ * \brief   Tidy up and write back.
+ *
+ * This function will close all open streams and write back all content.
+ */
+
+void finish (void)
+{
+    if (auxillary != NULL)
+        fclose (auxillary);
+
+    if (input_file != NULL)
+        fclose (input_file);
+
+    return;
+}
+
+
+
+/**
  * \brief   The main function of this lexer.
  * \param   argc    The count of passed command line arguments.
  * \param   args    The passed command line arguments.
