@@ -52,6 +52,7 @@
 * function `process`
 * function `spaces`
 * function `unknown_option`
+* function `unresolvable_argument`
 * include `ctypes.h`
 * include `sysexits.h`
 
