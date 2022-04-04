@@ -67,6 +67,10 @@
 * outsource lexer call and destruction to function `process`
 * outsource space character insertion to function `spaces`
 
+### Fixed
+
+* too much `const`
+
 ## [1.1] -- 2022-04-02
 
 ### Fixed
