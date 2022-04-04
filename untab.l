@@ -30,6 +30,17 @@
 /******************************************************************************/
 
 %{
+    /*
+     * Function declarations.
+     */
+
+    extern void eval    (const int argc, const char * const * const args);
+    extern int  main    (const int argc, const char * const * const args);
+    extern void process (void);
+    extern void spaces  (void);
+
+
+    
     /**
      * \brief   The count of spaces to replace a tab character with.
      *
@@ -40,17 +51,6 @@
      */
 
     int tab_width   = 0x4;
-
-
-
-    /*
-     * Function declarations.
-     */
-
-    extern void eval    (const int argc, const char * const * const args);
-    extern int  main    (const int argc, const char * const * const args);
-    extern void process (void);
-    extern void spaces  (void);
 %}
 
 %% /***************************************************************************/
