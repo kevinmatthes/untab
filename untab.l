@@ -401,6 +401,9 @@ inline void unknown_option (const char * const option)
  *
  * In case some extra arguments are passed to the lexer, it cannot deduce what
  * it should do with them.  Hence, it will consider them unresolvable and quit.
+ *
+ * This function will write a brief error message to `stderr` and quit the
+ * application with code 64.
  */
 
 inline void unresolvable_argument (const char * const argument)
