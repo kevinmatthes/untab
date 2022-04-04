@@ -151,7 +151,7 @@
  * file will be removed.
  */
 
-void eval (const int argc, const char * const * const args)
+void eval (const int argc, char * const * const args)
 {
     for (int i = 0x1; i < argc; i++)
         if (args[i][0x0] == '-')
@@ -172,7 +172,7 @@ void eval (const int argc, const char * const * const args)
         }
         else if (input_unset)
         {
-            input       = args[i];
+            input_name  = args[i];
             input_unset = false;
         }
         else
@@ -211,10 +211,12 @@ void eval (const int argc, const char * const * const args)
  * | 64     | Unknown option.       |
  */
 
-int main (const int argc, const char * const * const args)
+int main (const int argc, char * const * const args)
 {
     eval (argc, args);
+    prepare ();
     process ();
+    finish ();
     return EX_OK;
 }
 
