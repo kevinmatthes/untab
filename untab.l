@@ -256,7 +256,30 @@ void finish (void)
  *
  * If no argument is passed to this lexer, 4 will be assumed, by default.
  *
- * The meaning of the return values is as follows:
+ * This lexer offers both an interactive mode as well as a batch one.
+ *
+ * The former is invoked automatically if no file name is passed.  Anything
+ * which does not carry `-` as a prefix is assumed to be a file name.  In the
+ * interactive mode, the lexer reads from `stdin` and writes to `stdout`.  This
+ * is useful in order to pipe data around in a terminal session.
+ *
+ * The batch mode is invoked automatically by passing a file name to the lexer.
+ * Anything which does not carry `-` as a prefix is assumed to be a file name.
+ * The lexer will read from the given file, write the intermediate output to an
+ * auxillary file named `untab.l.aux` and rewrite the result to the original
+ * file at the end.  The auxillary file is tidied up automatically.
+ *
+ * In case of errors, the lexer will automatically abort the execution and will
+ * close all open streams and free all allocated memory regions, respectively.
+ * Corresponding error messages will be written to `stdout` and the return value
+ * of the lexer will be set according to `sysexits.h`.
+ *
+ * Possible errors are:
+ * * mandatory memory allocations fail
+ * * required files cannot be accessed
+ * * unknown command line options
+ *
+ * The meaning of the return values are as follows:
  *
  * | Code   | Meaning                       |
  * |:------:|:------------------------------|
