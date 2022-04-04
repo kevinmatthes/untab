@@ -101,18 +101,14 @@ void eval (const int argc, const char * const * const args)
             switch (strlen (args[i]))
             {
                 default:
-                    fprintf (stderr, "Unknown option:  '%s'.\n", args[i]);
-                    exit (EX_USAGE);
+                    unknown_option (args[i]);
                     break;
 
                 case 0x2:
                     if (isdigit (args[i][0x1]))
                         tab_width = args[i][0x1] - '0';
                     else
-                    {
-                        fprintf (stderr, "Unknown option:  '%s'.\n", args[i]);
-                        exit (EX_USAGE);
-                    }
+                        unknown_option (args[i]);
                     break;
             };
         }
