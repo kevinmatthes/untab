@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+* unused functions `input` and `yyunput`
+
 ## [1.2] -- 2022-04-04
 
 ### Added
