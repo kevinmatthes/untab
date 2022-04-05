@@ -267,6 +267,11 @@ void eval (const int argc, char * const * const args)
                                 unresolvable_argument (current);
                             break;
 
+                        case 'l':
+                            license (0x7E6, VERSION_YEAR, AUTHORS, LICENSE);
+                            exit (EX_OK);
+                            break;
+
                         case 'v':
                             version ( args[0x0]
                                     , VERSION_MAJOR
