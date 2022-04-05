@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+* accept only the first tab width setting
+
 ## [1.3] -- 2022-04-05
 
 ### Changed
