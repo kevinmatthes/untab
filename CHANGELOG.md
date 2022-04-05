@@ -44,6 +44,11 @@
 
 ## [Unreleased]
 
+### Changed
+
+* adjust docstrings
+* adjust README description
+
 ### Fixed
 
 * accept only the first tab width setting
