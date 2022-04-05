@@ -59,6 +59,7 @@
 * adjust option parsing
 * adjust README description
 * call `creation_failed` instead of `unknown_file` when file creations fail
+* outsource all macro docstrings to `define.dox`
 
 ### Fixed
 
