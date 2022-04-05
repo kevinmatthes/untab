@@ -95,6 +95,28 @@
 
 
     /**
+     * \brief   The GPL 2.0 license (brief version).
+     *
+     * This macro represents the brief version of the GPL 2.0 license text.
+     */
+
+    #define GPL_2_0 "This program is free software; you can redistribute it a" \
+                    "nd/or modify\nit under the terms of the GNU General Publ" \
+                    "ic License as published by\nthe Free Software Foundation" \
+                    "; either version 2 of the License, or\n(at your option) " \
+                    "any later version.\n\nThis program is distributed in the" \
+                    " hope that it will be useful,\nbut WITHOUT ANY WARRANTY;" \
+                    " without even the implied warranty of\nMERCHANTABILITY o" \
+                    "r FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Genera" \
+                    "l Public License for more details.\n\nYou should have re" \
+                    "ceived a copy of the GNU General Public License along\nw" \
+                    "ith this program; if not, write to the Free Software Fou" \
+                    "ndation, Inc.,\n51 Franklin Street, Fifth Floor, Boston," \
+                    " MA 02110-1301 USA."
+
+
+
+    /**
      * \brief   This lexer's license.
      *
      * This macro assigns this lexer the intended license.
