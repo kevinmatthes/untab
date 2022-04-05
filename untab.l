@@ -41,6 +41,14 @@
 
 
     /*
+     * Macros.
+     */
+
+    #define AUTHORS "Kevin Matthes"
+
+
+
+    /*
      * Function declarations.
      */
 
@@ -70,13 +78,6 @@
     extern void unknown_file            (const char * const file);
     extern void unknown_option          (const char * const option);
     extern void unresolvable_argument   (const char * const argument);
-
-
-
-    /**
-     */
-
-    #define AUTHORS "Kevin Matthes"
 
 
 
