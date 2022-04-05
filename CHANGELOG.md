@@ -44,6 +44,11 @@
 
 ## [Unreleased]
 
+### Changed
+
+* adjust docstrings
+* adjust README description
+
 ### Fixed
 
 * unused functions `input` and `yyunput`
