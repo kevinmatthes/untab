@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [1.3] -- 2022-04-05
+
 ### Changed
 
 * adjust docstrings
