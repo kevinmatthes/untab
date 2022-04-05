@@ -114,6 +114,16 @@
 
 
     /**
+     * \brief   This lexer's latest development year.
+     *
+     * This macro represents the latest year during which a commit was made.
+     */
+
+    #define VERSION_YEAR    0x7E6
+
+
+
+    /**
      * \brief   A flag to control whether the input file was already set.
      *
      * This flag indicates whether the input file was already configurated.  It
