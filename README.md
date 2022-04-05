@@ -110,11 +110,11 @@ This lexer will replace any tab characters in the input stream with space
 characters.  In order to define the count of spaces to replace a single tab
 with, the command line arguments will be used to determine the intended value.
 
-The intended tab width can be any integer from zero to nine, including zero
-and nine.  The desired width needs be to entered as a decimal integer with
-`-` as a prefix.  For instance, in order to remove all tab characters, `-0`,
-for tab width zero, needs to be passed.  If no argument is passed to this
-lexer, 4 will be assumed, by default.
+The intended tab width can be any integer from zero to nine, including zero and
+nine.  The desired width needs be to entered as a decimal integer with `-` as a
+prefix.  For instance, in order to remove all tab characters, `-0`, for tab
+width zero, needs to be passed.  If no argument is passed to this lexer, 4 will
+be assumed, by default.
 
 This lexer offers both an interactive mode as well as a batch one.
 
