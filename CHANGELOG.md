@@ -46,6 +46,7 @@
 
 ### Added
 
+* create `define.dox`
 * function `creation_failed`
 * function `license`
 * function `version`
