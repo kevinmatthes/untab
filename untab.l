@@ -59,6 +59,11 @@
                     "ith this program; if not, write to the Free Software Fou" \
                     "ndation, Inc.,\n51 Franklin Street, Fifth Floor, Boston," \
                     " MA 02110-1301 USA."
+    #define LICENSE GPL_2_0
+    #define VERSION_FIX_LEVEL    -0x1
+    #define VERSION_MAJOR   0x1
+    #define VERSION_MINOR   0x4
+    #define VERSION_YEAR    0x7E6
 
 
 
@@ -92,26 +97,6 @@
     extern void unknown_file            (const char * const file);
     extern void unknown_option          (const char * const option);
     extern void unresolvable_argument   (const char * const argument);
-
-
-
-    #define LICENSE GPL_2_0
-
-
-
-    #define VERSION_FIX_LEVEL    -0x1
-
-
-
-    #define VERSION_MAJOR   0x1
-
-
-
-    #define VERSION_MINOR   0x4
-
-
-
-    #define VERSION_YEAR    0x7E6
 
 
 
