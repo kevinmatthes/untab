@@ -126,8 +126,8 @@ order to pipe data around in a terminal session.
 The batch mode is invoked automatically by passing a file name to the lexer.
 Anything which does not carry `-` as a prefix is assumed to be a file name.  The
 lexer will read from the given file, write the intermediate output to an
-auxillary file named `untab.l.aux` and rewrite the result to the original file
-at the end.  The auxillary file is tidied up automatically.
+auxillary file named `untab.l.aux` and rewrite the original file at the end.
+The auxillary file is tidied up automatically.
 
 In case of errors, the lexer will automatically abort the execution and will
 close all open streams and free all allocated memory regions, respectively.
