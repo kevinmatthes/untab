@@ -47,7 +47,9 @@
 %%%%
 
 % Software.
-compiler.flags  = ' -Wall -Werror -Wextra -Wno-unused-function -Wpedantic ';
+compiler.flags  = ' -Wall -Werror -Wextra -Wpedantic ';
+compiler.flags  = [compiler.flags ' -DYY_NO_INPUT '];
+compiler.flags  = [compiler.flags ' -DYY_NO_UNPUT '];
 compiler.in     = '*.c';
 compiler.link   = ' -lfl ';
 compiler.out    = 'untab';
