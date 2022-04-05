@@ -47,6 +47,7 @@
 ### Added
 
 * function `creation_failed`
+* function `license`
 * function `version`
 
 ### Changed
