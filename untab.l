@@ -53,6 +53,7 @@
     extern void spaces  (void);
 
     // Error handling functions.
+    extern void creation_failed         (const char * const file);
     extern void memory_insufficient     (void);
     extern void unknown_file            (const char * const file);
     extern void unknown_option          (const char * const option);
@@ -143,6 +144,25 @@
 %% /***************************************************************************/
 
 /**
+ * \brief   Quit the application because of not creatable files.
+ *
+ * This lexer needs to be able to create auxillary files.  In case it could not
+ * create them, it is not useful to continue its execution.
+ *
+ * This function will write a brief error message to `stderr` and quit the
+ * application with code 73.
+ */
+
+inline void creation_failed (const char * const file)
+{
+    fprintf (stderr, "Intended file could not be created:  '%s'.\n", file);
+    exit (EX_CANTCREAT);
+    return;
+}
+
+
+
+/**
  * \brief   Evaluate the command line arguments and set the environment.
  * \param   argc    The count of passed command line arguments.
  * \param   args    The passed command line arguments.
@@ -228,7 +248,7 @@ void finish (void)
         if (auxillary == NULL)
         {
             fclose (input_file);
-            unknown_file (input_name);
+            creation_failed (input_name);
         };
 
         char * const content = (char *) calloc (size + 0x1, sizeof (char));
@@ -292,7 +312,7 @@ void finish (void)
  *
  * Possible errors are:
  * * mandatory memory allocations fail
- * * required files cannot be accessed
+ * * required files cannot be accessed and / or created
  * * unknown command line options
  *
  * The meaning of the return values are as follows:
@@ -302,6 +322,7 @@ void finish (void)
  * | 0      | no problem occured                    |
  * | 64     | unknown option / too many arguments   |
  * | 69     | required file not accessable          |
+ * | 73     | required file not creatable           |
  * | 74     | too few memory                        |
  */
 
@@ -359,7 +380,7 @@ void prepare (void)
         if (auxillary == NULL)
         {
             fclose (input_file);
-            unknown_file (AUXILLARY);
+            creation_failed (AUXILLARY);
         };
 
         yyin    = input_file;
