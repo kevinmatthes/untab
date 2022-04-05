@@ -118,10 +118,10 @@ be assumed, by default.
 
 This lexer offers both an interactive mode as well as a batch one.
 
-The former is invoked automatically if no file name is passed.  Anything
-which does not carry `-` as a prefix is assumed to be a file name.  In the
-interactive mode, the lexer reads from `stdin` and writes to `stdout`.  This
-is useful in order to pipe data around in a terminal session.
+The former is invoked automatically if no file name is passed.  Anything which
+does not carry `-` as a prefix is assumed to be a file name.  In the interactive
+mode, the lexer reads from `stdin` and writes to `stdout`.  This is useful in
+order to pipe data around in a terminal session.
 
 The batch mode is invoked automatically by passing a file name to the lexer.
 Anything which does not carry `-` as a prefix is assumed to be a file name.
