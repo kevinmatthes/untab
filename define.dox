@@ -33,11 +33,10 @@
 
 /******************************************************************************/
 
-/*!
+/*! \def    AUTHORS
  * \brief   The list of contributors.
  *
- * This macro represents the list of all people who commited to this
- * project.
+ * This macro represents the list of all people who commited to this project.
  */
 
 /******************************************************************************/
