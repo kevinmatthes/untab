@@ -74,10 +74,6 @@
 
 
     /**
-     * \brief   The list of contributors.
-     *
-     * This macro represents the list of all people who commited to this
-     * project.
      */
 
     #define AUTHORS "Kevin Matthes"
