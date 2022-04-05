@@ -49,6 +49,8 @@
 * function `creation_failed`
 * function `license`
 * function `version`
+* option for license information
+* option for verion information
 
 ### Changed
 
