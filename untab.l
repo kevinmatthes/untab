@@ -82,6 +82,17 @@
 
 
     /**
+     * \brief   A flag to control whether the tab width was already set.
+     *
+     * This flag indicates whether the tab width was already configurated.  It
+     * will be inverted as soon as the tab width was set.
+     */
+
+    bool tab_width_unset = true;
+
+
+
+    /**
      * \brief   The input file to read from.
      *
      * This is the file to optimise.  It will be opened when all arguments are
