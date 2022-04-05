@@ -51,4 +51,10 @@
  * This macro represents the brief version of the GPL 2.0 license text.
  */
 
+/*! \def    LICENSE
+ * \brief   This lexer's license.
+ *
+ * This macro assigns this lexer the intended license.
+ */
+
 /******************************************************************************/

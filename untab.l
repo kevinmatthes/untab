@@ -95,12 +95,6 @@
 
 
 
-    /**
-     * \brief   This lexer's license.
-     *
-     * This macro assigns this lexer the intended license.
-     */
-
     #define LICENSE GPL_2_0
 
 
