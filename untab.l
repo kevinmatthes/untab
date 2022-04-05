@@ -46,6 +46,19 @@
 
     #define AUTHORS "Kevin Matthes"
     #define AUXILLARY   "untab.l.aux"
+    #define GPL_2_0 "This program is free software; you can redistribute it a" \
+                    "nd/or modify\nit under the terms of the GNU General Publ" \
+                    "ic License as published by\nthe Free Software Foundation" \
+                    "; either version 2 of the License, or\n(at your option) " \
+                    "any later version.\n\nThis program is distributed in the" \
+                    " hope that it will be useful,\nbut WITHOUT ANY WARRANTY;" \
+                    " without even the implied warranty of\nMERCHANTABILITY o" \
+                    "r FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Genera" \
+                    "l Public License for more details.\n\nYou should have re" \
+                    "ceived a copy of the GNU General Public License along\nw" \
+                    "ith this program; if not, write to the Free Software Fou" \
+                    "ndation, Inc.,\n51 Franklin Street, Fifth Floor, Boston," \
+                    " MA 02110-1301 USA."
 
 
 
@@ -79,24 +92,6 @@
     extern void unknown_file            (const char * const file);
     extern void unknown_option          (const char * const option);
     extern void unresolvable_argument   (const char * const argument);
-
-
-
-
-
-    #define GPL_2_0 "This program is free software; you can redistribute it a" \
-                    "nd/or modify\nit under the terms of the GNU General Publ" \
-                    "ic License as published by\nthe Free Software Foundation" \
-                    "; either version 2 of the License, or\n(at your option) " \
-                    "any later version.\n\nThis program is distributed in the" \
-                    " hope that it will be useful,\nbut WITHOUT ANY WARRANTY;" \
-                    " without even the implied warranty of\nMERCHANTABILITY o" \
-                    "r FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Genera" \
-                    "l Public License for more details.\n\nYou should have re" \
-                    "ceived a copy of the GNU General Public License along\nw" \
-                    "ith this program; if not, write to the Free Software Fou" \
-                    "ndation, Inc.,\n51 Franklin Street, Fifth Floor, Boston," \
-                    " MA 02110-1301 USA."
 
 
 
