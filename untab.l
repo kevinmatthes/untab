@@ -74,6 +74,17 @@
 
 
     /**
+     * \brief   The list of contributors.
+     *
+     * This macro represents the list of all people who commited to this
+     * project.
+     */
+
+    #define AUTHORS "Kevin Matthes"
+
+
+
+    /**
      * \brief   The path to the auxillary file.
      *
      * This is the path to the auxillary file which will be removed at the end.
