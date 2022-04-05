@@ -238,6 +238,7 @@ void eval (const int argc, char * const * const args)
                                     , VERSION_MINOR
                                     , VERSION_FIX_LEVEL
                                     );
+                            exit (EX_OK);
                             break;
                     };
                     break;
