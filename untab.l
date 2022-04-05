@@ -79,6 +79,36 @@
 
 
     /**
+     * \brief   This lexer's fix level.
+     *
+     * This macro represents the fix level of this lexer.
+     */
+
+    #define VERSION_FIX_LEVEL    -0x1
+
+
+
+    /**
+     * \brief   This lexer's major version.
+     *
+     * This macro represents the major version of this lexer.
+     */
+
+    #define VERSION_MAJOR   0x1
+
+
+
+    /**
+     * \brief   This lexer's minor version.
+     *
+     * This macro represents the minor version of this lexer.
+     */
+
+    #define VERSION_MINOR   0x4
+
+
+
+    /**
      * \brief   A flag to control whether the input file was already set.
      *
      * This flag indicates whether the input file was already configurated.  It
