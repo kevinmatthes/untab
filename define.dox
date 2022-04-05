@@ -57,4 +57,28 @@
  * This macro assigns this lexer the intended license.
  */
 
+/*! \def    VERSION_FIX_LEVEL
+ * \brief   This lexer's fix level.
+ *
+ * This macro represents the fix level of this lexer.
+ */
+
+/*! \def    VERSION_MAJOR
+ * \brief   This lexer's major version.
+ *
+ * This macro represents the major version of this lexer.
+ */
+
+/*! \def    VERSION_MINOR
+ * \brief   This lexer's minor version.
+ *
+ * This macro represents the minor version of this lexer.
+ */
+
+/*! \def    VERSION_YEAR
+ * \brief   This lexer's latest development year.
+ *
+ * This macro represents the latest year during which a commit was made.
+ */
+
 /******************************************************************************/

@@ -99,41 +99,17 @@
 
 
 
-    /**
-     * \brief   This lexer's fix level.
-     *
-     * This macro represents the fix level of this lexer.
-     */
-
     #define VERSION_FIX_LEVEL    -0x1
 
 
-
-    /**
-     * \brief   This lexer's major version.
-     *
-     * This macro represents the major version of this lexer.
-     */
 
     #define VERSION_MAJOR   0x1
 
 
 
-    /**
-     * \brief   This lexer's minor version.
-     *
-     * This macro represents the minor version of this lexer.
-     */
-
     #define VERSION_MINOR   0x4
 
 
-
-    /**
-     * \brief   This lexer's latest development year.
-     *
-     * This macro represents the latest year during which a commit was made.
-     */
 
     #define VERSION_YEAR    0x7E6
 
