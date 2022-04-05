@@ -44,14 +44,20 @@
 
 ## [Unreleased]
 
+### Added
+
+* function `creation_failed`
+
 ### Changed
 
 * adjust docstrings
 * adjust README description
+* call `creation_failed` instead of `unknown_file` when file creations fail
 
 ### Fixed
 
 * accept only the first tab width setting
+* typo in changelog item
 
 ## [1.3] -- 2022-04-05
 
@@ -72,7 +78,7 @@
 * forward declaration of `main` in main lexfile
 * function `eval`
 * function `finish`
-* function `insufficient_memory`
+* function `memory_insufficient`
 * function `prepare`
 * function `process`
 * function `spaces`
