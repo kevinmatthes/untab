@@ -525,4 +525,41 @@ inline void unresolvable_argument (const char * const argument)
     return;
 }
 
+
+
+/**
+ * \brief   The version information.
+ * \param   app_name    This lexer's name.
+ * \param   major       This lexer's major version.
+ * \param   minor       This lexer's minor version.
+ * \param   fix_level   This lexer's fix level.
+ *
+ * This function will write a brief version information to `stdout`.
+ */
+
+inline void version ( const char * const    app_name
+                    , const int             major
+                    , const int             minor
+                    , const int             fix_level
+                    )
+{
+    if (fix_level >= 0x0)
+        fprintf ( stdout
+                , "%s, version %x.%x.%x.\n"
+                , app_name
+                , major
+                , minor
+                , fix_level
+                );
+    else
+        fprintf ( stdout
+                , "%s, version %x.%x.\n"
+                , app_name
+                , major
+                , minor
+                );
+
+    return;
+}
+
 /******************************************************************************/
