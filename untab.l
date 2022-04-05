@@ -174,8 +174,13 @@ void eval (const int argc, char * const * const args)
                     break;
 
                 case 0x2:
-                    if (isdigit (args[i][0x1]))
-                        tab_width = args[i][0x1] - '0';
+                    if (isdigit (args[i][0x1]) && tab_width_unset)
+                    {
+                        tab_width       = args[i][0x1] - '0';
+                        tab_width_unset = false;
+                    }
+                    else if (isdigit (args[i][0x1]))
+                        unresolvable_argument (args[i]);
                     else
                         unknown_option (args[i]);
                     break;
