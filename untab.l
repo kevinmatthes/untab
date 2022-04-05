@@ -45,6 +45,7 @@
      */
 
     #define AUTHORS "Kevin Matthes"
+    #define AUXILLARY   "untab.l.aux"
 
 
 
@@ -78,16 +79,6 @@
     extern void unknown_file            (const char * const file);
     extern void unknown_option          (const char * const option);
     extern void unresolvable_argument   (const char * const argument);
-
-
-
-    /**
-     * \brief   The path to the auxillary file.
-     *
-     * This is the path to the auxillary file which will be removed at the end.
-     */
-
-    #define AUXILLARY   "untab.l.aux"
 
 
 

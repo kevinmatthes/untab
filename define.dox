@@ -39,4 +39,10 @@
  * This macro represents the list of all people who commited to this project.
  */
 
+/*! \def    AUXILLARY
+ * \brief   The path to the auxillary file.
+ *
+ * This is the path to the auxillary file which will be removed at the end.
+ */
+
 /******************************************************************************/
