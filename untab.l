@@ -185,34 +185,58 @@ inline void creation_failed (const char * const file)
 void eval (const int argc, char * const * const args)
 {
     for (int i = 0x1; i < argc; i++)
-        if (args[i][0x0] == '-')
+    {
+        char * const current = args[i];
+
+        if (current[0x0] == '-')
         {
-            switch (strlen (args[i]))
+            switch (strlen (current))
             {
                 default:
-                    unknown_option (args[i]);
+                    unknown_option (current);
                     break;
 
                 case 0x2:
-                    if (isdigit (args[i][0x1]) && tab_width_unset)
+                {
+                    const char mode = current[0x1];
+
+                    switch (mode)
                     {
-                        tab_width       = args[i][0x1] - '0';
-                        tab_width_unset = false;
-                    }
-                    else if (isdigit (args[i][0x1]))
-                        unresolvable_argument (args[i]);
-                    else
-                        unknown_option (args[i]);
+                        default:
+                            unknown_option (current);
+                            break;
+
+                        case '0':
+                        case '1':
+                        case '2':
+                        case '3':
+                        case '4':
+                        case '5':
+                        case '6':
+                        case '7':
+                        case '8':
+                        case '9':
+                            if (tab_width_unset)
+                            {
+                                tab_width       = mode - '0';
+                                tab_width_unset = false;
+                            }
+                            else
+                                unresolvable_argument (current);
+                            break;
+                    };
                     break;
+                };
             };
         }
         else if (input_unset)
         {
-            input_name  = args[i];
+            input_name  = current;
             input_unset = false;
         }
         else
-            unresolvable_argument (args[i]);
+            unresolvable_argument (current);
+    };
 
     return;
 }
