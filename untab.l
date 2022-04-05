@@ -82,11 +82,7 @@
 
 
 
-    /**
-     * \brief   The GPL 2.0 license (brief version).
-     *
-     * This macro represents the brief version of the GPL 2.0 license text.
-     */
+
 
     #define GPL_2_0 "This program is free software; you can redistribute it a" \
                     "nd/or modify\nit under the terms of the GNU General Publ" \

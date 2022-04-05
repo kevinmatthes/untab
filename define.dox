@@ -45,4 +45,10 @@
  * This is the path to the auxillary file which will be removed at the end.
  */
 
+/*! \def    GPL_2_0
+ * \brief   The GPL 2.0 license (brief version).
+ *
+ * This macro represents the brief version of the GPL 2.0 license text.
+ */
+
 /******************************************************************************/
