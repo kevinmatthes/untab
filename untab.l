@@ -52,6 +52,13 @@
     extern void process (void);
     extern void spaces  (void);
 
+    // Miscellaneous functions.
+    extern void version ( const char * const    app_name
+                        , const int             major
+                        , const int             minor
+                        , const int             fix_level
+                        );
+
     // Error handling functions.
     extern void creation_failed         (const char * const file);
     extern void memory_insufficient     (void);
@@ -223,6 +230,14 @@ void eval (const int argc, char * const * const args)
                             }
                             else
                                 unresolvable_argument (current);
+                            break;
+
+                        case 'v':
+                            version ( args[0x0]
+                                    , VERSION_MAJOR
+                                    , VERSION_MINOR
+                                    , VERSION_FIX_LEVEL
+                                    );
                             break;
                     };
                     break;
