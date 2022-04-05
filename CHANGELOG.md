@@ -59,6 +59,7 @@
 
 * accept only the first tab width setting
 * typo in changelog item
+* update submodule `routines`
 
 ## [1.3] -- 2022-04-05
 
