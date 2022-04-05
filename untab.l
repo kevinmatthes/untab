@@ -44,8 +44,6 @@
      * Macros.
      */
 
-    #define AUTHORS             "Kevin Matthes"
-    #define AUXILLARY           "untab.l.aux"
     #define GPL_2_0 \
     "This program is free software; you can redistribute it and/or modify\n"   \
     "it under the terms of the GNU General Public License as published by\n"   \
@@ -60,6 +58,9 @@
     "You should have received a copy of the GNU General Public License along\n"\
     "with this program; if not, write to the Free Software Foundation, Inc.,\n"\
     "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
+    
+    #define AUTHORS             "Kevin Matthes"
+    #define AUXILLARY           "untab.l.aux"
     #define LICENSE             GPL_2_0
     #define VERSION_FIX_LEVEL   -0x1
     #define VERSION_MAJOR       0x1
