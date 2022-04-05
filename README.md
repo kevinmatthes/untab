@@ -114,7 +114,7 @@ The intended tab width can be any integer from zero to nine, including zero and
 nine.  The desired width needs be to entered as a decimal integer with `-` as a
 prefix.  For instance, in order to remove all tab characters, `-0`, for tab
 width zero, needs to be passed.  If no argument is passed to this lexer, 4 will
-be assumed, by default.
+be assumed, by default.  Only one tab width setting is permitted.
 
 This lexer offers both an interactive mode as well as a batch one.
 
