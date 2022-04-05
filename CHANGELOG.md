@@ -51,6 +51,7 @@
 ### Changed
 
 * adjust docstrings
+* adjust option parsing
 * adjust README description
 * call `creation_failed` instead of `unknown_file` when file creations fail
 
