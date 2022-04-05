@@ -136,7 +136,7 @@ the lexer will be set according to `sysexits.h`.
 
 Possible errors are:
 * mandatory memory allocations fail
-* required files cannot be accessed
+* required files cannot be accessed and / or created
 * unknown command line options
 
 The meaning of the return values are as follows:
@@ -146,6 +146,7 @@ The meaning of the return values are as follows:
 | 0      | no problem occured                    |
 | 64     | unknown option / too many arguments   |
 | 69     | required file not accessable          |
+| 73     | required file not creatable           |
 | 74     | too few memory                        |
 
 The script `install-app.m` will install the application in `~/.local/bin/`, at
