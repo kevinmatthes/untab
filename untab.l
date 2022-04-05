@@ -243,6 +243,7 @@ void finish (void)
         fseek (input_file, 0x0, SEEK_END);
         const size_t size = ftell (input_file);
         rewind (input_file);
+
         auxillary = fopen (input_name, "wb");
 
         if (auxillary == NULL)
@@ -262,9 +263,11 @@ void finish (void)
 
         const size_t bytes = fread (content, sizeof (char), size, input_file);
         fclose (input_file);
+
         content[bytes] = 0x0;
         fwrite (content, sizeof (char), bytes, auxillary);
         fclose (auxillary);
+
         free (content);
         remove (AUXILLARY);
     };
