@@ -108,8 +108,7 @@ octave-cli flex-gcc.m
 
 This lexer will replace any tab characters in the input stream with space
 characters.  In order to define the count of spaces to replace a single tab
-with, the command line arguments will be used to determine the intended
-value.
+with, the command line arguments will be used to determine the intended value.
 
 The intended tab width can be any integer from zero to nine, including zero
 and nine.  The desired width needs be to entered as a decimal integer with
