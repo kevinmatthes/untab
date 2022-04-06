@@ -38,13 +38,15 @@
     #include <stdbool.h>
     #include <sysexits.h>
 
+    #include "GPL_2_0.h"
+
 
 
     /*
      * Macros.
      */
 
-    #define GPL_2_0 \
+#define GPL_2_0 \
     "This program is free software; you can redistribute it and/or modify\n"   \
     "it under the terms of the GNU General Public License as published by\n"   \
     "the Free Software Foundation; either version 2 of the License, or\n"      \
@@ -58,7 +60,7 @@
     "You should have received a copy of the GNU General Public License along\n"\
     "with this program; if not, write to the Free Software Foundation, Inc.,\n"\
     "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
-    
+
     #define AUTHORS             "Kevin Matthes"
     #define AUXILLARY           "untab.l.aux"
     #define LICENSE             GPL_2_0
