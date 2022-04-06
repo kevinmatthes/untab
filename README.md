@@ -157,9 +157,9 @@ octave install-app.m
 octave-cli install-app.m
 ```
 
-### Options
+## Options
 
-#### `-0`
+### `-0`
 
 ```
 untab -0
@@ -169,7 +169,7 @@ Set the tab width to zero.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-1`
+### `-1`
 
 ```
 untab -1
@@ -179,7 +179,7 @@ Set the tab width to one.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-2`
+### `-2`
 
 ```
 untab -2
@@ -189,7 +189,7 @@ Set the tab width to two.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-3`
+### `-3`
 
 ```
 untab -3
@@ -199,7 +199,7 @@ Set the tab width to three.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-4`
+### `-4`
 
 ```
 untab -4
@@ -209,7 +209,7 @@ Set the tab width to four.  This is the default setting.
 
 Only one setting for the tab width is allowed.
 
-#### `-5`
+### `-5`
 
 ```
 untab -5
@@ -219,7 +219,7 @@ Set the tab width to five.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-6`
+### `-6`
 
 ```
 untab -6
@@ -229,7 +229,7 @@ Set the tab width to six.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-7`
+### `-7`
 
 ```
 untab -7
@@ -239,7 +239,7 @@ Set the tab width to seven.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-8`
+### `-8`
 
 ```
 untab -8
@@ -249,7 +249,7 @@ Set the tab width to eight.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
-#### `-9`
+### `-9`
 
 ```
 untab -9
