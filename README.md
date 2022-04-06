@@ -259,4 +259,20 @@ Set the tab width to nine.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
+### `-l`
+
+```
+untab -l
+```
+
+Show the license text and quit.  All further options will be ignored.
+
+### `-v`
+
+```
+untab -v
+```
+
+Show the version and quit.  All further options will be ignored.
+
 <!----------------------------------------------------------------------------->
