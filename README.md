@@ -157,4 +157,16 @@ octave install-app.m
 octave-cli install-app.m
 ```
 
+### Options
+
+#### `-0`
+
+```
+untab -0
+```
+
+Set the tab width to zero.  The default value is four.
+
+Only one setting for the tab width is allowed.
+
 <!----------------------------------------------------------------------------->
