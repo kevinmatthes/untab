@@ -41,40 +41,10 @@
 
 
 
-/*
- * Includes.
- */
-
-// .
-
-
-
-/*
- * Macros.
- */
-
-// .
-
-
-
-/*
- * Type declarations.
- */
-
-// .
-
-
-
-/*
- * Function declarations.
- */
-
-// .
-
-
-
-/*
- * Constants.
+/**
+ * \brief   The GPL 2.0 license (brief version).
+ *
+ * This macro represents the brief version of the GPL 2.0 license text.
  */
 
 // .
