@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [1.4] -- 2022-04-06
+
 ### Added
 
 * create `define.dox`
