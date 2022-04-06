@@ -18,13 +18,15 @@
 
 /**
  * \author      Kevin Matthes
- * \brief       .
+ * \brief       The brief license text of the GPL 2.0 license.
  * \copyright   (C) 2022 Kevin Matthes.
  *              This file is licensed GPL 2 as of June 1991.
  * \date        2022
- * \file        .h
+ * \file        GPL_2_0.h
  * \note        See `LICENSE' for full license.
  *              See `README.md' for project details.
+ *
+ * This header defines the brief license text of the GPL 2.0 license as a macro.
  */
 
 /******************************************************************************/
@@ -34,8 +36,8 @@
  */
 
 #pragma once
-#ifndef ___H__
-#define ___H__
+#ifndef __GPL_2_0_H__
+#define __GPL_2_0_H__
 
 
 
@@ -83,11 +85,7 @@
  * End of header.
  */
 
-// Tidying up.
-#ifndef ___INTERNAL__
-#endif  // ! ___INTERNAL__
-
 // Leaving the header.
-#endif  // ! ___H__
+#endif  // ! __GPL_2_0_H__
 
 /******************************************************************************/
