@@ -48,6 +48,7 @@
 
 * create `define.dox`
 * create `GPL_2_0.h`
+* description for all options
 * function `creation_failed`
 * function `license`
 * function `version`
