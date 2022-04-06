@@ -199,4 +199,14 @@ Set the tab width to three.  The default value is four.
 
 Only one setting for the tab width is allowed.
 
+#### `-4`
+
+```
+untab -4
+```
+
+Set the tab width to four.  This is the default setting.
+
+Only one setting for the tab width is allowed.
+
 <!----------------------------------------------------------------------------->
