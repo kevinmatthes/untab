@@ -64,7 +64,7 @@
 ### Fixed
 
 * accept only the first tab width setting
-* typo in changelog item
+* typos in changelog items
 * update submodule `routines`
 
 ## [1.3] -- 2022-04-05
@@ -142,7 +142,7 @@
 
 * docstrings for Doxygen
 * minimal project description in README
-* software requirement: Flex
+* software requirement:  Flex
 
 ### Changed
 
@@ -155,8 +155,8 @@
 
 ### Removed
 
-* software requirement: Doxygen
-* software requirement: `make`
+* software requirement:  Doxygen
+* software requirement:  `make`
 
 ## [0.3] -- 2022-04-01
 
@@ -167,8 +167,8 @@
 
 ### Deprecated
 
-* software requirement: Doxygen
-* software requirement: `make`
+* software requirement:  Doxygen
+* software requirement:  `make`
 
 ## [0.2] -- 2022-04-01
 
