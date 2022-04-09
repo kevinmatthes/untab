@@ -188,7 +188,7 @@ inline void creation_failed (const char * const file)
  * This function will evaluate the passed command line arguments and set the
  * environment of this lexer accordingly.
  *
- * The arguments might contain options which are used in order instruct the
+ * The arguments might contain options which are used in order to instruct the
  * resulting application.  For instance, the intended tab width can be passed as
  * an option.
  *
