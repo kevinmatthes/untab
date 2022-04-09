@@ -44,6 +44,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+* typo in docstring
+
 ## [1.4] -- 2022-04-06
 
 ### Added
