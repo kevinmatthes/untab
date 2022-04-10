@@ -46,7 +46,8 @@
 
 ### Fixed
 
-* typo in docstring
+* typos in docstring
+* typos in README description
 
 ### Removed
 
