@@ -50,7 +50,7 @@
     #define LICENSE             GPL_2_0
     #define VERSION_FIX_LEVEL   -0x1
     #define VERSION_MAJOR       0x1
-    #define VERSION_MINOR       0x4
+    #define VERSION_MINOR       0x5
     #define VERSION_YEAR        0x7E6
 
 
