@@ -48,6 +48,10 @@
 
 * typo in docstring
 
+### Removed
+
+* header `ctypes.h` as include
+
 ## [1.4] -- 2022-04-06
 
 ### Added
