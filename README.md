@@ -131,7 +131,7 @@ The auxillary file is tidied up automatically.
 
 In case of errors, the lexer will automatically abort the execution and will
 close all open streams and free all allocated memory regions, respectively.
-Corresponding error messages will be written to `stdout` and the return value of
+Corresponding error messages will be written to `stderr` and the return value of
 the lexer will be set according to `sysexits.h`.
 
 Possible errors are:
