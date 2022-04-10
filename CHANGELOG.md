@@ -69,6 +69,10 @@
 * call `creation_failed` instead of `unknown_file` when file creations fail
 * outsource all macro docstrings to `define.dox`
 
+### Deprecated
+
+* header `ctypes.h` as include
+
 ### Fixed
 
 * accept only the first tab width setting
