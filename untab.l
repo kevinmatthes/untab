@@ -34,7 +34,6 @@
      * Includes.
      */
 
-    #include <ctype.h>
     #include <stdbool.h>
     #include <sysexits.h>
 
