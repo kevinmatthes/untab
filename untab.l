@@ -391,7 +391,7 @@ inline void license ( const int             year
  *
  * The former is invoked automatically if no file name is passed.  Anything
  * which does not carry `-` as a prefix is assumed to be a file name.  In the
- * interactive mode, the lexer reads from `stdin` and writes to `stderr`.  This
+ * interactive mode, the lexer reads from `stdin` and writes to `stdout`.  This
  * is useful in order to pipe data around in a terminal session.
  *
  * The batch mode is invoked automatically by passing a file name to the lexer.
@@ -402,7 +402,7 @@ inline void license ( const int             year
  *
  * In case of errors, the lexer will automatically abort the execution and will
  * close all open streams and free all allocated memory regions, respectively.
- * Corresponding error messages will be written to `stdout` and the return value
+ * Corresponding error messages will be written to `stderr` and the return value
  * of the lexer will be set according to `sysexits.h`.
  *
  * Possible errors are:
