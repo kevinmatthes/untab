@@ -44,6 +44,8 @@
 
 ## [Unreleased]
 
+## [1.5] -- 2022-04-10
+
 ### Fixed
 
 * typos in docstring
